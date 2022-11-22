@@ -21,14 +21,47 @@
 	height: 100px;
 	z-index: 1;
 }
+          #apDiv3 {
+	position: absolute;
+	left: 75%;
+	top: 117px;
+	width: 256px;
+	height: 64px;
+	z-index: 1;
+	font-size: 64px;
+	font-family: "黑体";
+}
           </style>
+          <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+          </script>
           </head>
-        <body>
+        <body onLoad="MM_preloadImages('button-1.png')">
+        <div id="apDiv3"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','button-1.png',1)"><img src="button.png" width="256" height="64" id="Image3"></a></div>
         <link href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet"/><header id="nav-1" role="banner"><div class="container">
           <div class="header-inner">
             <h1><a href="https://rebines.github.io/"><img src="https://rebines.github.io/server-icon.png" alt="HTMLPAGE" itemprop="logo" class="custom-logo"/></a><a href="https://rebines.github.io/"></a></h1><nav role="navigation"><ul id="ionmd"><li><a href="https://rebines.github.io/" class="active">首页</a></li><li><a href="https://rebines.github.io/page_complaintsfeedback">投诉/反馈</a></li><li></li></ul></nav></div></div></header><div data-v-36c163cb="" id="im8r"><div class="panel"><h1 class="welcome">Welcome to</h1><div class="big-title"><span id="ij1l">Rebine&#039;s Server官方网站</span></div><div class="description">本网站由Lightning Studio网站前端工程师亲手制作</div></div></div>
-            <div class="panel">
-              <h3 align="center">热烈庆祝北京市三帆中学裕中校区停课居家</h3>
+            <div class="panel"> <span class="notices">热烈庆祝北京市三帆中学裕中校区停课居家</span>
               <div>
                 <div align="right">2022.11.9</div>
               </div>
